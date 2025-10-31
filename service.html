@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="wpOceans">
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
-    <title>PlumMet - Plumber and Construction HTML Template</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/canvanewlogo.png">
+    <title>Services - PlumbManiacs Inc.</title>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -20,31 +19,95 @@
     <link href="assets/css/owl.transitions.css" rel="stylesheet">
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
-    <link href="assets/sass/style.css" rel="stylesheet">
+    <link href="assets/sass/style.css?v=3" rel="stylesheet">
+    <style>
+        .header-style-3 .topbar ul .fi:before,
+        .header-style-3 .contact-intro ul li i,
+        .topbar .contact-intro ul li i {
+            color: #FECB00 !important;
+        }
+        @media (min-width: 992px) {
+            .wpo-site-header #navbar > ul > li > a:hover,
+            .wpo-site-header #navbar > ul > li > a:focus {
+                text-decoration: none !important;
+            }
+            .wpo-site-header #navbar > ul > li > a {
+                position: relative;
+            }
+            .wpo-site-header #navbar > ul > li > a:after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 3px;
+                background: #FECB00;
+                transition: width 0.3s ease;
+            }
+            .wpo-site-header #navbar > ul > li > a:hover:after,
+            .wpo-site-header #navbar > ul > li > a.active:after {
+                width: 80%;
+            }
+        }
+        @media (max-width: 991px) {
+            .navigation-holder {
+                background: #000000 !important;
+            }
+            #navbar {
+                background: #000000 !important;
+            }
+            .wpo-site-header #navbar > ul > li > a {
+                color: #ffffff !important;
+            }
+            .wpo-site-header #navbar > ul > li > a:hover,
+            .wpo-site-header #navbar > ul > li > a.active {
+                color: #FECB00 !important;
+            }
+            .menu-close {
+                color: #FECB00 !important;
+            }
+        }
+    </style>
 </head>
-
 <body>
-
-    <!-- start page-wrapper -->
     <div class="page-wrapper">
-        <!-- start preloader -->
-        <div class="preloader">
+        <div class="preloader" style="background-color: #121A22 !important;">
             <div class="vertical-centered-box">
                 <div class="content">
-                    <div class="loader-circle"></div>
+                    <div class="loader-circle" style="box-shadow: inset 0 0 0 1px rgba(254, 203, 0, 0.3) !important;"></div>
                     <div class="loader-line-mask">
-                        <div class="loader-line"></div>
+                        <div class="loader-line" style="box-shadow: inset 0 0 0 1px rgba(254, 203, 0, 0.8) !important;"></div>
                     </div>
-                    <img src="assets/images/preloader.png" alt="">
+                    <img src="assets/images/canvanewlogo.png" alt="PlumbManiacs" style="max-width: 125px; background: white; border-radius: 50%; padding: 10px;">
                 </div>
             </div>
         </div>
-        <!-- end preloader -->
-        <!-- Start header -->
-        <header id="header" class="header-style-1">
+        <header id="header" class="header-style-3">
+            <div class="topbar" style="background-color: #000000; color: #ffffff;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col-lg-7 col-sm-12 col-12">
+                            <div class="contact-intro" style="color: #ffffff;">
+                                <ul>
+                                    <li style="color: #ffffff; white-space: nowrap;"><i class="fi ti-location-pin" style="color: #FECB00 !important;"></i> 15071 Polk Street, Sylmar CA 91342 &nbsp;&nbsp;&nbsp; <i class="fi flaticon-email" style="color: #FECB00 !important;"></i> plumbmaniacs1@gmail.com &nbsp;&nbsp;&nbsp; <i class="ti-time" style="color: #FECB00 !important;"></i> Mon - Sun 24/7 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <i class="ti-mobile" style="color: #FECB00 !important;"></i> (866) 611-9238 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; LIC#1143262</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-5 col-sm-12 col-12">
+                            <div class="contact-info">
+                                <ul>
+                                    <li><a href="#" style="color: #FECB00;"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#" style="color: #FECB00;"><i class="ti-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="wpo-site-header">
                 <nav class="navigation navbar navbar-expand-lg navbar-light">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row align-items-center">
                             <div class="col-lg-1 col-md-3 col-3 d-lg-none dl-block">
                                 <div class="mobail-menu">
@@ -58,8 +121,7 @@
                             </div>
                             <div class="col-lg-2 col-md-5 col-5">
                                 <div class="navbar-header">
-                                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg"
-                                            alt="logo"></a>
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/newlogo.png" alt="logo"></a>
                                 </div>
                             </div>
                             <div class="col-lg-8 col-md-1 col-1">
@@ -67,51 +129,27 @@
                                     <button class="menu-close"><i class="ti-close"></i></button>
                                     <ul class="nav navbar-nav mb-2 mb-lg-0">
                                         <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a class="active" href="service.html">Service</a></li>
+                                        <li><a href="project.html">Project</a></li>
+                                        <li><a href="reviews.html">Reviews</a></li>
+                                        <li><a href="contact.html">Contact us</a></li>
                                     </ul>
-
-                                </div><!-- end of nav-collapse -->
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-3">
-                                <div class="header-right">
-                                    <div class="close-form">
-                                        <a class="theme-btn" href="contact.html">Hire Expert</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div><!-- end of container -->
+                    </div>
                 </nav>
             </div>
         </header>
-        <!-- end of header -->
 
-        <!-- start wpo-page-title -->
-        <section class="wpo-page-title">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="wpo-breadcumb-wrap">
-                            <h2>Service</h2>
-                            <ol class="wpo-breadcumb-wrap">
-                                <li><a href="index.html">Home</a></li>
-                                <li>Service</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </section>
-        <!-- end page-title -->
-
-
-        <!-- start of plummet-service-section -->
-        <section class="plummet-service-section s3">
+        <section class="plummet-service-section section-padding">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 col-12">
                         <div class="wpo-section-title">
                             <span>our services</span>
-                            <h2>Common Plumbing Problems and Their Solutions</h2>
+                            <h2>Complete Plumbing Solutions for Your Home or Business</h2>
                         </div>
                     </div>
                 </div>
@@ -122,13 +160,8 @@
                                 <img src="assets/images/choose/icon-1.png" alt="">
                             </div>
                             <div class="text">
-                                <h2><a href="service-single.html">water heater repair</a></h2>
-                                <p>Tempus egestas sed sed risus.
-                                    Ultricies tristique nulla aliquet enim.
-                                    Sed egestas egestas fringilla phasellus.</p>
-                                <div class="service-btn">
-                                    <a href="service-single.html">View Details</a>
-                                </div>
+                                <h2>Drains & Sewer Lines</h2>
+                                <p>Expert drain cleaning and sewer line services. We tackle clogs, backups, and line repairs with advanced equipment and proven techniques.</p>
                             </div>
                         </div>
                         <div class="single-card">
@@ -136,13 +169,8 @@
                                 <img src="assets/images/choose/icon-2.png" alt="">
                             </div>
                             <div class="text">
-                                <h2><a href="service-single.html">leak detection</a></h2>
-                                <p>Tempus egestas sed sed risus.
-                                    Ultricies tristique nulla aliquet enim.
-                                    Sed egestas egestas fringilla phasellus.</p>
-                                <div class="service-btn">
-                                    <a href="service-single.html">View Details</a>
-                                </div>
+                                <h2>Whole House Repipe</h2>
+                                <p>Complete repiping solutions for residential and commercial properties. Upgrade your old pipes with quality materials and expert installation.</p>
                             </div>
                         </div>
                         <div class="single-card">
@@ -150,89 +178,15 @@
                                 <img src="assets/images/choose/icon-3.png" alt="">
                             </div>
                             <div class="text">
-                                <h2><a href="service-single.html">hot water system</a></h2>
-                                <p>Tempus egestas sed sed risus.
-                                    Ultricies tristique nulla aliquet enim.
-                                    Sed egestas egestas fringilla phasellus.</p>
-                                <div class="service-btn">
-                                    <a href="service-single.html">View Details</a>
-                                </div>
+                                <h2>Complete Plumbing Systems</h2>
+                                <p>Full-service plumbing for your entire property including pipe liners, installations, repairs, and maintenance for homes and businesses.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end of plummet-service-section -->
 
-        <!--Start plummet-project-section-->
-        <section class="plummet-project-section section-padding">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="wpo-section-title">
-                            <span>OUR PORTFOLIO</span>
-                            <h2>Successfull Work of PlumMet</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col col-xs-12 sortable-project">
-                        <div class="wpo-project-container project-slider-s2 owl-carousel">
-                            <div class="grid">
-                                <div class="wpo-project-item">
-                                    <img src="assets/images/project/1.jpg" alt class="img img-responsive">
-                                    <div class="wpo-project-text">
-                                        <span>Prevent Plumbing</span>
-                                        <h3><a href="project-single.html">Kitchen Plumbing</a></h3>
-                                        <a class="arrow-btn" href="project-single.html"><i
-                                                class="fi flaticon-right-arrow-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="wpo-project-item">
-                                    <img src="assets/images/project/2.jpg" alt class="img img-responsive">
-                                    <div class="wpo-project-text">
-                                        <span>Prevent Plumbing</span>
-                                        <h3><a href="project-single.html">Gas Line Services</a></h3>
-                                        <a class="arrow-btn" href="project-single.html"><i
-                                                class="fi flaticon-right-arrow-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="wpo-project-item">
-                                    <img src="assets/images/project/3.jpg" alt class="img img-responsive">
-                                    <div class="wpo-project-text">
-                                        <span>Prevent Plumbing</span>
-                                        <h3><a href="project-single.html">Water Line Repair</a></h3>
-                                        <a class="arrow-btn" href="project-single.html"><i
-                                                class="fi flaticon-right-arrow-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="wpo-project-item">
-                                    <img src="assets/images/project/4.jpg" alt class="img img-responsive">
-                                    <div class="wpo-project-text">
-                                        <span>Prevent Plumbing</span>
-                                        <h3><a href="project-single.html">Basement Plumbing</a></h3>
-                                        <a class="arrow-btn" href="project-single.html"><i
-                                                class="fi flaticon-right-arrow-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end row -->
-            </div>
-        </section>
-        <!--End plummet-project-section-->
-
-        <!-- start of wpo-site-footer-section -->
         <footer class="wpo-site-footer">
             <div class="wpo-upper-footer">
                 <div class="container">
@@ -240,110 +194,48 @@
                         <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="widget about-widget">
                                 <div class="logo widget-title">
-                                    <img src="assets/images/logo-2.svg" alt="blog">
+                                    <img src="assets/images/newlogo.png" alt="PlumbManiacs Inc" style="background: white; padding: 10px; border-radius: 8px;">
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod tempor incididunt
-                                    labore et dolore magna aliqua</p>
+                                <p>Honest, reliable, and trustworthy plumbing services for San Fernando Valley and LA County. We're maniacs for perfect plumbing!</p>
+                                <p style="color: #fff; margin-top: 15px; font-size: 16px;"><strong><i class="ti-mobile" style="color: #FECB00;"></i> (866) 611-9238 &nbsp;&nbsp;|&nbsp;&nbsp; LIC#1143262</strong></p>
                                 <div class="social-icon">
                                     <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-twitter-alt"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-google"></i>
-                                            </a>
-                                        </li>
+                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="#"><i class="ti-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div class="widget link-widget">
-                                <div class="widget-title">
-                                    <h3>- help centre</h3>
+                        <div class="col col-lg-9 col-md-12 col-sm-12 col-12">
+                            <div class="widget map-widget">
+                                <div class="widget-title" style="margin-bottom: 20px;">
+                                    <h3 style="color: #FECB00;">Our Location</h3>
                                 </div>
-                                <ul>
-                                    <li><a href="#">- Customer Support</a></li>
-                                    <li><a href="#">- All Brand Tire Shop</a></li>
-                                    <li><a href="#">- Terms & Conditions</a></li>
-                                    <li><a href="#">- Support Centre</a></li>
-                                    <li><a href="#">- Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div class="widget link-widget">
-                                <div class="widget-title">
-                                    <h3>- resource</h3>
-                                </div>
-                                <ul>
-                                    <li><a href="#">- Free Training</a></li>
-                                    <li><a href="#">- Working Tutorials</a></li>
-                                    <li><a href="#">- Blog Post</a></li>
-                                    <li><a href="#">- Our Work Station</a></li>
-                                    <li><a href="#">- Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div class="widget newsletter-widget">
-                                <div class="widget-title">
-                                    <h3>Newsletter:</h3>
-                                </div>
-                                <div class="f-from">
-                                    <input type="email" class="form-control" placeholder="Enter your email:">
-                                    <input type="submit" class="theme-btn" value="subscribe now">
-                                </div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3295.8845768475753!2d-118.43873848478944!3d34.31471108053846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c285e0f0f0f0f0%3A0x0!2s15071%20Polk%20St%2C%20Sylmar%2C%20CA%2091342!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
                         </div>
                     </div>
-                </div> <!-- end container -->
+                </div>
             </div>
             <div class="wpo-lower-footer">
                 <div class="container">
                     <div class="lower-wrap">
                         <div class="row justify-content-center">
                             <div class="col col-lg-6 col-12">
-                                <p class="copyright"> Copyright © 2023 plummet by <a href="index.html">wpOceans</a>.
-                                    All
-                                    Rights Reserved.</p>
+                                <p class="copyright"> Copyright © 2025 <a href="index.html">PlumbManiacs Inc.</a> - All Rights Reserved. Serving San Fernando Valley & LA County.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- end of wpo-site-footer-section -->
-
-
     </div>
-    <!-- end of page-wrapper -->
 
-    <!-- All JavaScript files
-    ================================================== -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Plugins for this template -->
     <script src="assets/js/modernizr.custom.js"></script>
     <script src="assets/js/jquery.dlmenu.js"></script>
     <script src="assets/js/jquery-plugin-collection.js"></script>
-    <!-- Custom script for this template -->
-    <script src="assets/js/script.js"></script>
-
+    <script src="assets/js/script.js?v=2"></script>
 </body>
-
 </html>

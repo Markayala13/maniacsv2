@@ -232,7 +232,7 @@
     -------------------------------------------*/
     function preloader() {
         if($('.preloader').length) {
-            $('.preloader').delay(2000).fadeOut(500, function() {
+            $('.preloader').delay(1000).fadeOut(200, function() {
 
                 //active wow
                 wow.init();
@@ -590,7 +590,7 @@
     if ($(".service-slider").length) {
         $(".service-slider").owlCarousel({
             autoplay: true,
-            autoplayTimeout: 3000,
+            autoplayTimeout: 8000,
             smartSpeed: 300,
             loop:true,
             fade:true,
