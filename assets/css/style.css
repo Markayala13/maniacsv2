@@ -8685,4 +8685,35 @@ img {
 }
 .error-404-section .error-message p {
   margin-bottom: 1.8em;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*--------------------------------------------------------------
+19. Topbar Contact Responsive Fix
+--------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .topbar .contact-intro-responsive ul li {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    font-size: 11px !important;
+    line-height: 1.6 !important;
+    padding: 10px 5px !important;
+    word-wrap: break-word !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .topbar .contact-intro-responsive ul li {
+    font-size: 10px !important;
+    line-height: 1.5 !important;
+    padding: 8px 5px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .topbar .contact-intro-responsive ul li {
+    font-size: 9px !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
