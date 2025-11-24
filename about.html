@@ -10,6 +10,7 @@
     <title>About Us - PlumbManiacs Inc.</title>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
     <link href="assets/css/owl.carousel.css" rel="stylesheet">
@@ -204,6 +205,68 @@
             .choose-card {
                 margin-bottom: 30px;
             }
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .whatsapp-float i {
+            margin-top: 3px;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 28px;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        .whatsapp-float {
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            animation: none;
         }
     </style>
 </head>
@@ -460,6 +523,11 @@
 
     </div>
     <!-- end of page-wrapper -->
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/18184008123?text=Hello!%20I%20need%20plumbing%20services" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <i class="fa fa-whatsapp"></i>
+    </a>
 
     <!-- All JavaScript files
     ================================================== -->
